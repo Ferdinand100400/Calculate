@@ -80,7 +80,7 @@ class ProcessingExpression {
             }
             flag = false;                         // Флажок - арабское число
             int num = Integer.parseInt(number);
-            if (num <= 10) {
+            if ((num <= 10) && (num >= 1)) {
                 return num;
             } else {
                 throw new NullPointerException("throws Exception");
